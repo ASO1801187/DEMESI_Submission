@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoCard">
+
+    <ImageButton
+        android:id="@+id/PhotoCardBtn"
+        android:layout_width="@dimen/TabBtnWidth"
+        android:layout_height="@dimen/TabBtnHeight"
+        android:background="@color/TabColor"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HaveCardBtn"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageButton
+        android:id="@+id/HaveCardBtn"
+        android:layout_width="@dimen/TabBtnWidth"
+        android:layout_height="@dimen/TabBtnHeight"
+        android:background="@color/TabColor"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MyCardBtn"
+        app:srcCompat="@drawable/havecard" />
+
+    <ImageButton
+        android:id="@+id/MyCardBtn"
+        android:layout_width="@dimen/TabBtnWidth"
+        android:layout_height="@dimen/TabBtnHeight"
+        android:background="@color/TabColor"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mycard" />
+
+    <EditText
+        android:id="@+id/Card_id"
+        android:layout_width="@dimen/TextBoxWidth"
+        android:layout_height="@dimen/TextBoxHeight"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/AddHint"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/TextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="@dimen/BtnWidth"
+        android:layout_height="@dimen/BtnHeight"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/AddBtnHint"
+        android:textSize="@dimen/BtnTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/HaveCardBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Card_id" />
+
+</android.support.constraint.ConstraintLayout>

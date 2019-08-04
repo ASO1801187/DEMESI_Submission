@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCardList">
+
+    <ImageView
+        android:id="@+id/MyCard1"
+        android:layout_width="@dimen/CardListWidth"
+        android:layout_height="@dimen/CardListHeight"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/meishi" />
+
+    <ImageView
+        android:id="@+id/MyCard2"
+        android:layout_width="@dimen/CardListWidth"
+        android:layout_height="130dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyCard1"
+        app:srcCompat="@drawable/meishi" />
+
+    <ImageView
+        android:id="@+id/MyCard3"
+        android:layout_width="@dimen/CardListWidth"
+        android:layout_height="130dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyCard2"
+        app:srcCompat="@drawable/meishi" />
+
+    <ImageView
+        android:id="@+id/MyCard4"
+        android:layout_width="@dimen/CardListWidth"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyCard3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/meishi" />
+
+    <TextView
+        android:id="@+id/Name1"
+        android:layout_width="@dimen/ListNameWidth"
+        android:layout_height="@dimen/ListNameHeight"
+        android:layout_marginEnd="144dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:gravity="left|center"
+        android:text="名前"
+        android:textSize="@dimen/ListTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/MyCard1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Name2"
+        android:layout_width="@dimen/ListNameWidth"
+        android:layout_height="@dimen/ListNameHeight"
+        android:layout_marginEnd="144dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:gravity="left|center"
+        android:text="名前"
+        android:textSize="@dimen/ListTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/MyCard2"
+        app:layout_constraintTop_toBottomOf="@+id/Name1" />
+
+    <TextView
+        android:id="@+id/Name3"
+        android:layout_width="@dimen/ListNameWidth"
+        android:layout_height="@dimen/ListNameHeight"
+        android:layout_marginEnd="144dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:gravity="left|center"
+        android:text="名前"
+        android:textSize="@dimen/ListTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/MyCard2"
+        app:layout_constraintTop_toBottomOf="@+id/Name2" />
+
+    <TextView
+        android:id="@+id/Name4"
+        android:layout_width="@dimen/ListNameWidth"
+        android:layout_height="@dimen/ListNameHeight"
+        android:layout_marginEnd="144dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:gravity="left|center"
+        android:text="名前"
+        android:textSize="@dimen/ListTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/MyCard2"
+        app:layout_constraintTop_toBottomOf="@+id/Name3" />
+
+    <ImageButton
+        android:id="@+id/PhotoCardBtn"
+        android:layout_width="@dimen/TabBtnWidth"
+        android:layout_height="@dimen/TabBtnHeight"
+        android:background="@color/TabColor"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HaveCardBtn"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageButton
+        android:id="@+id/HaveCardBtn"
+        android:layout_width="@dimen/TabBtnWidth"
+        android:layout_height="@dimen/TabBtnHeight"
+        android:background="@color/TabColor"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MyCardBtn"
+        app:srcCompat="@drawable/havecard" />
+
+    <ImageButton
+        android:id="@+id/MyCardBtn"
+        android:layout_width="@dimen/TabBtnWidth"
+        android:layout_height="@dimen/TabBtnHeight"
+        android:background="@color/TabColor"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mycard" />
+
+    <ImageButton
+        android:id="@+id/AddInd"
+        android:layout_width="@dimen/AddBtnFrame"
+        android:layout_height="@dimen/AddBtnFrame"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/PhotoCardBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/add" />
+
+</android.support.constraint.ConstraintLayout>
